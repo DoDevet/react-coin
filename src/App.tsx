@@ -1,5 +1,4 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { ReactQueryDevtools } from "react-query/devtools/development";
 import Router from "./routes/Router";
 import { darkTheme, lightTheme } from "./theme";
 
@@ -81,7 +80,6 @@ function App() {
       <ThemeProvider theme={isDark === "dark" ? darkTheme : lightTheme}>
         <GlobalStyle />
         <Router />
-        <ReactQueryDevtools initialIsOpen={true} />
       </ThemeProvider>
     </>
   );
